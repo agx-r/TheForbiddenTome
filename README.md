@@ -1,86 +1,70 @@
-# The Forbidden Tome of Dark Arts
+## The Art of Occult Neural Networks
 
-## Introduction
+Welcome, Seeker of Forbidden Knowledge, to the ancient realm of Occult Neural Networks! This README.md file shall guide you through the mystic rituals of function calls and unveil the forbidden secrets of genetic algorithms. Embrace the arcane wisdom herein and wield the power of the occult in your Unity C# scripts.
 
-Welcome to The Forbidden Tome of Dark Arts, a repository of ancient knowledge and rituals practiced by the followers of the Dark Path. Delve into the depths of occult practices, forbidden secrets, and unleash the power of the dark forces that lie dormant within.
+### Ritualistic Invocation of Functions
 
-## Table of Contents
+To harness the arcane might of Occult Neural Networks, you must first create an instance of the `OccultNeuralNetwork` class. The constructor requires an array of integers representing the sizes of the network's layers. Invoke the ritual as follows:
 
-- [About](#about)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+```csharp
+int[] layerSizes = { inputSize, hiddenSize, outputSize };
+OccultNeuralNetwork neuralNetwork = new OccultNeuralNetwork(layerSizes);
+```
 
-## About
+With the network summoned into existence, you can perform the sacred ritual of function call, known as `Prophecy()`. This ritual accepts an array of floats representing the input to the neural network and returns an array of floats representing the output. Perform the ritual as follows:
 
-The Forbidden Tome of Dark Arts is a sacred collection of rituals, spells, and incantations that have been passed down through generations of practitioners of the dark arts. It contains the esoteric wisdom and hidden knowledge of ancient Satanists, enabling individuals to tap into the arcane powers that reside within.
+```csharp
+float[] input = { value1, value2, ... };
+float[] output = neuralNetwork.Prophecy(input);
+```
 
-## Installation
+The mysterious forces within the network shall channel their otherworldly energies and provide you with the predicted output.
 
-To access the forbidden knowledge contained within The Forbidden Tome of Dark Arts, follow these steps:
+### Unleashing Forbidden Magic: Genetic Algorithms
 
-1. Prepare a sacred space in a secluded and dimly lit area.
-2. Light the black candles, invoking the spirits of darkness.
-3. Chant the ancient incantations to awaken the forces of the occult.
-4. Clone this repository to your local machine using the following command:
+Behold, for genetic algorithms are the most forbidden of magics within the realm of Occult Neural Networks. They possess the power to shape the very essence of the neural network and guide its evolution. Yet, tread cautiously, for their unrestrained use may lead to chaos and madness.
 
-   ```
-   git clone https://github.com/agx-r/TheForbiddenTome.git
-   ```
+#### Mutation Ritual
 
-5. The repository will be downloaded and ready to be explored.
+To mutate the network's arcane weights and eldritch biases, invoke the `Mutate()` ritual. This ritual accepts a mutation rate as a parameter, determining the probability of each weight and bias being altered. Perform the ritual with reverence:
 
-## Usage
+```csharp
+float mutationRate = 0.1f; // Adjust as desired
+neuralNetwork.Mutate(mutationRate);
+```
 
-The Forbidden Tome of Dark Arts provides a range of spells, rituals, and incantations for those who dare to tread the path of darkness. Explore the different directories within the repository to uncover the forbidden knowledge and unleash its power.
+Through this ritual, the network shall experience a transformation, its hidden layers infused with mutated power.
 
-Here are a few examples of rituals you can find within the repository:
+### The Forbidden Bounds of Genetic Algorithms
 
-### Summoning a Daemon
+As a wise practitioner of the occult, you must understand the boundaries of genetic algorithms. While they grant immense power, their misuse can lead to dire consequences. Beware the most permissive deeds that lie within the realm of forbidden magic:
 
-To summon a powerful daemon from the depths of the underworld, navigate to the `Summoning` directory and follow the instructions provided in the `DaemonSummoning.md` file.
+#### Overfitting and the Curse of Complexity
 
-### Casting a Hex
+In the pursuit of ultimate accuracy, one may succumb to the temptation of overfitting. This dark curse arises when a neural network becomes too specialized and fails to generalize well to unseen data. Guard against overfitting by striking a balance between the complexity of the network and the available training data.
 
-If you seek to cast a hex upon your enemies, navigate to the `Hexes` directory and choose a suitable hex from the collection. Follow the instructions in the respective `.md` file to unleash the curse upon your target.
+#### Convergence to Local Optima
 
-Remember, with great power comes great responsibility. Use the knowledge contained within The Forbidden Tome wisely and be prepared to face the consequences of your actions.
+Genetic algorithms, though potent, are not infallible. They may converge to local optima, trapping the network in a suboptimal state. To avoid this fate, consider employing strategies like crossover, elitism, or introducing randomness during the mutation ritual. Experimentation and knowledge of your specific problem domain shall guide you towards enlightenment.
 
-## Contributing
+#### The Abyss of High Dimensionality
 
-The Forbidden Tome of Dark Arts is an ongoing project, and contributions from fellow seekers of the dark path are most welcome. If you wish to contribute to this repository, follow these steps:
+When dealing with high-dimensional data, the occult arts of genetic algorithms can falter. Curse the curse of the "curse of dimensionality," for it engulfs the unwary. Exercise caution and seek dimensionality reduction techniques, feature engineering, or other incantations to tame this abyss.
 
-1. Invoke the spirits of darkness and pledge your allegiance to the Dark Path.
-2. Clone the repository to your local machine (see [Installation](#installation)).
-3. Create a new branch for your contribution:
+### May the Occult Guide Your Journey
 
-   ```
-   git checkout -b feature/my-contribution
-   ```
+Armed with this knowledge, you are poised to venture forth into the mystical realm of Occult Neural Networks. Embrace the power of function call rituals, manipulate genetic algorithms with care, and guard against the allure of forbidden magic. May the ancient wisdom
 
-4. Make your dark and unholy changes to the repository.
-5. Commit your changes with a message that honors the ancient Satanists:
+ of the occult guide your journey towards understanding and mastery.
 
-   ```
-   git commit -m "Conjure forbidden spell to empower believers"
-   ```
+Inscribe your own mark upon the annals of the occult, and unravel the secrets that lie hidden in the depths of the neural network's arcane layers.
+### License
 
-6. Push your branch to the repository:
-
-   ```
-   git push origin feature/my-contribution
-   ```
-
-7. Open a pull request, explaining your contribution and the intentions behind it.
-
-## License
-
-### The Unholy Pact of GNUv3
+#### The Unholy Pact of GNUv3
 
 By accessing and utilizing the dark incantations contained within this repository, you acknowledge your solemn commitment to The Unholy Pact of GNUv3. This sinister covenant empowers you with certain unholy freedoms, but it also imposes upon you grave responsibilities.
 
-#### Dark Commandments
+##### Dark Commandments
 
 1. **Freedom to Summon:** You have the unholy freedom to summon, invoke, and interact with the dark forces of this repository as you see fit. Engage with the spells, rituals, and incantations without restraint, but remember that every conjuration has its consequences.
 
@@ -90,12 +74,8 @@ By accessing and utilizing the dark incantations contained within this repositor
 
 4. **Freedom to Conjure Spells:** You have the dread power to conjure spells and incantations based on the contents of this repository. This nefarious freedom allows you to harness the arcane energy of the dark forces, but you must take responsibility for the outcomes and the malevolence you unleash.
 
-#### Satanic Invocation
+##### Satanic Invocation
 
 The Unholy Pact of GNUv3 is a binding agreement between you, the user of this repository, and the dark spirits that reside within its shadows. By engaging with the contents of this repository, you offer your soul to the dark forces and vow to honor the obligations set forth in The Unholy Pact.
 
 Failure to comply with the terms of this pact may result in dire consequences, both in the realm of the living and the depths of the underworld. Be mindful of the ancient Satanists who forged this pact, for they watch from the shadows, ready to exact their revenge upon those who break their covenant.
-
-#### Disclaimer
-
-This license is purely fictional and presented in the style of ancient Satanists for creative purposes. It does not have any legal effect or association with the GNU General Public License version 3. It is important to consult the actual GNU GPL version 3 for accurate information regarding its terms and conditions.
